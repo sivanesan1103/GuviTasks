@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 py-8 px-4">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <form>
+         
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-900 mb-2">
+                    Name <span class="text-red-600">*</span>
+                </label>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <input 
+                            type="text" 
+                            placeholder="First" 
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            required
+                        />
+                        <span class="text-xs text-gray-600 mt-1 block">First</span>
+                    </div>
+                    <div>
+                        <input 
+                            type="text" 
+                            placeholder="Last" 
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            required
+                        />
+                        <span class="text-xs text-gray-600 mt-1 block">Last</span>
+                    </div>
+                </div>
+            </div>
+
+ 
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-900 mb-2">
+                    Email <span class="text-red-600">*</span>
+                </label>
+                <input 
+                    type="email" 
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                />
+            </div>
+
+           
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-900 mb-2">
+                    Your Experience <span class="text-red-600">*</span>
+                </label>
+                <div class="flex gap-2 mb-2">
+                    <button type="button" class="star-btn text-3xl text-gray-300 hover:text-yellow-400 transition">★</button>
+                    <button type="button" class="star-btn text-3xl text-gray-300 hover:text-yellow-400 transition">★</button>
+                    <button type="button" class="star-btn text-3xl text-gray-300 hover:text-yellow-400 transition">★</button>
+                    <button type="button" class="star-btn text-3xl text-gray-300 hover:text-yellow-400 transition">★</button>
+                    <button type="button" class="star-btn text-3xl text-gray-300 hover:text-yellow-400 transition">★</button>
+                </div>
+                <p class="text-xs text-gray-600 italic">Overall, how would you rate your experience with us?</p>
+            </div>
+
+
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-900 mb-3">
+                    How satisfied are you with <span class="text-red-600">*</span>
+                </label>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="border-b">
+                                <th class="text-left py-2 px-2 text-xs font-normal"></th>
+                                <th class="text-center py-2 px-2 text-xs font-normal">Very Unsatisfied</th>
+                                <th class="text-center py-2 px-2 text-xs font-normal">Unsatisfied</th>
+                                <th class="text-center py-2 px-2 text-xs font-normal">Neutral</th>
+                                <th class="text-center py-2 px-2 text-xs font-normal">Satisfied</th>
+                                <th class="text-center py-2 px-2 text-xs font-normal">Very Satisfied</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b bg-gray-200">
+                                <td class="py-3 px-2 text-sm">Purchase</td>
+                                <td class="text-center"><input type="radio" name="purchase" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="purchase" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="purchase" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="purchase" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="purchase" class="w-4 h-4" /></td>
+                            </tr>
+                            <tr class="border-b ">
+                                <td class="py-3 px-2 text-sm">Service</td>
+                                <td class="text-center"><input type="radio" name="service" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="service" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="service" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="service" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="service" class="w-4 h-4" /></td>
+                            </tr>
+                            <tr class="border-b bg-gray-200">
+                                <td class="py-3 px-2 text-sm">Company Overall</td>
+                                <td class="text-center"><input type="radio" name="company" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="company" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="company" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="company" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="company" class="w-4 h-4" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-900 mb-3">
+                    How likely are you to <span class="text-red-600">*</span>
+                </label>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="border-b">
+                                <th class="text-left py-2 px-2 text-xs font-normal"></th>
+                                <th class="text-center py-2 px-2 text-xs font-normal">Very Unlikely</th>
+                                <th class="text-center py-2 px-2 text-xs font-normal">Unlikely</th>
+                                <th class="text-center py-2 px-2 text-xs font-normal">Neutral</th>
+                                <th class="text-center py-2 px-2 text-xs font-normal">Likely</th>
+                                <th class="text-center py-2 px-2 text-xs font-normal">Very Likely</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b bg-gray-200">
+                                <td class="py-3 px-2 text-sm">Buy from us again</td>
+                                <td class="text-center"><input type="radio" name="buy-again" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="buy-again" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="buy-again" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="buy-again" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="buy-again" class="w-4 h-4" /></td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-2 text-sm">Recommend our product to others</td>
+                                <td class="text-center"><input type="radio" name="recommend-product" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="recommend-product" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="recommend-product" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="recommend-product" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="recommend-product" class="w-4 h-4" /></td>
+                            </tr>
+                            <tr class="border-b bg-gray-200">
+                                <td class="py-3 px-2 text-sm">Recommend our company to others</td>
+                                <td class="text-center"><input type="radio" name="recommend-company" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="recommend-company" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="recommend-company" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="recommend-company" class="w-4 h-4" /></td>
+                                <td class="text-center"><input type="radio" name="recommend-company" class="w-4 h-4" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-900 mb-2">
+                    Additional comments or suggestions
+                </label>
+                <textarea 
+                    rows="6" 
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                ></textarea>
+            </div>
+
+            
+            <div>
+                <button 
+                    type="submit" 
+                    class="px-6 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition font-medium"
+                >
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+      
+        const stars = document.querySelectorAll('.star-btn');
+        let selectedRating = 0;
+
+        stars.forEach((star, index) => {
+            star.addEventListener('click', () => {
+                selectedRating = index + 1;
+                updateStars();
+            });
+
+            star.addEventListener('mouseenter', () => {
+                stars.forEach((s, i) => {
+                    if (i <= index) {
+                        s.classList.remove('text-gray-300');
+                        s.classList.add('text-yellow-400');
+                    } else {
+                        s.classList.remove('text-yellow-400');
+                        s.classList.add('text-gray-300');
+                    }
+                });
+            });
+        });
+
+        document.querySelector('form').addEventListener('mouseleave', () => {
+            updateStars();
+        });
+
+        function updateStars() {
+            stars.forEach((star, index) => {
+                if (index < selectedRating) {
+                    star.classList.remove('text-gray-300');
+                    star.classList.add('text-yellow-400');
+                } else {
+                    star.classList.remove('text-yellow-400');
+                    star.classList.add('text-gray-300');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

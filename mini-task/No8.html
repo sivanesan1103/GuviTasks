@@ -1,75 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Bapu Graphics Courses Table</title>
+<meta charset="UTF-8">
+<title>Customer Table</title>
+
+<style>
+    body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    table {
+        border-collapse: collapse;
+        background: #eaeaea;
+        box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+
+    th, td {
+        border: 2px solid #666;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    th {
+        background: #dcdcdc;
+        font-weight: bold;
+    }
+</style>
 </head>
+
 <body>
 
-<table border="1" cellpadding="10">
+<table>
 
     <tr>
-        <th>Category</th>
-        <th>Courses</th>
+        <th rowspan="2">Customer</th>
+        <th colspan="3">Items</th>
+        <th colspan="2">Payments</th>
     </tr>
 
     <tr>
-        <td>Advance Multimedia</td>
-        <td>
-            Graphic Design Course<br>
-            UI/UX Design Course<br>
-            Advanced Web Design Course<br>
-            Video Post Production
-        </td>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Date</th>
+        <th>Amount</th>
     </tr>
 
     <tr>
-        <td>Graphic Specialized</td>
-        <td>
-            Logo Design Course<br>
-            Image Editing Course<br>
-            Infographic Design<br>
-            Book Publishing Course
-        </td>
+        <td rowspan="3">Customer Name</td>
+        <td>Item1</td>
+        <td>5</td>
+        <td>$400.00</td>
+        <td>12 Sep 2018</td>
+        <td>$3,000.00</td>
     </tr>
 
     <tr>
-        <td>Software Wise Courses</td>
-        <td>
-            Adobe Photoshop<br>
-            Adobe Illustrator<br>
-            Adobe After Effects<br>
-            Adobe XD
-        </td>
+        <td>Item2</td>
+        <td>10</td>
+        <td>$200.00</td>
+        <td></td>
+        <td></td>
     </tr>
 
     <tr>
-        <td>Development Codes</td>
-        <td>
-            HTML5 Course<br>
-            CSS3 Course<br>
-            JavaScript Course<br>
-            Bootstrap Course
-        </td>
-    </tr>
-
-    <tr>
-        <td>Web Specialized</td>
-        <td>
-            UX Design Course<br>
-            UI Design Course<br>
-            E-Commerce Dev Course<br>
-            Responsive Web Design
-        </td>
-    </tr>
-
-    <tr>
-        <td>Digital Marketing</td>
-        <td>
-            SEO Course<br>
-            Social Media Marketing<br>
-            Affiliate Marketing<br>
-            Google Ads
-        </td>
+        <td>Item3</td>
+        <td>2</td>
+        <td>$500.00</td>
+        <td>18 Sep 2018</td>
+        <td>$2,000.00</td>
     </tr>
 
 </table>

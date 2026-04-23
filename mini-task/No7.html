@@ -1,2 +1,94 @@
-Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)
-not working
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ID Card Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Card */
+        .card {
+            width: 320px;
+            padding: 20px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #ff9933, #ffffff, #138808);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Title */
+        .card h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+        }
+
+        /* Button */
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: #333;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>ID Verification</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Aadhar / PAN Number</label>
+        <input type="text" placeholder="Enter ID number" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
